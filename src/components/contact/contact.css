@@ -1,0 +1,245 @@
+.contact {
+    padding: 10px 75px;
+}
+
+.contact-container {
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-headingSection {
+    text-align: center;
+    font-family: var(--section-heading);
+}
+
+.contact-heading {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.contact-subHeading {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: var(--secondary-text);
+}
+
+.contact-formSection {
+    position: relative;
+    margin-top: 45px;
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.form-textArea {
+    position: relative;
+    overflow: hidden;
+    border-radius: inherit;
+    padding: 20px;
+}
+
+.contact-circle1 {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border: 5px solid var(--secondary-bg);
+    border-radius: 50%;
+    left: -50px;
+    z-index: 1;
+}
+
+.contact-circle2 {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border: 15px solid var(--secondary-bg);
+    opacity: 50%;
+    border-radius: 50%;
+    bottom: 0;
+    right:-70px;
+    z-index: 1;
+}
+
+.personalInfo {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.personalSection {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 100%;
+    z-index: 100;
+}
+
+.personalSection-heading {
+    font-family: var(--main-heading);
+    font-size: 1.7rem;
+    color: var(--special);
+}
+
+.mainContact {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.personalContact {
+    cursor: pointer;
+    font-family: var(--navbar-links);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--primary-text);
+}
+
+
+.personalSocials {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.socialAccount {
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--secondary-text);
+}
+
+.form-inputArea {
+    background-color: var(--secondary-bg);
+}
+
+form {
+    padding: 2.3rem 2.2rem;
+    overflow: hidden;
+    position: relative;
+}
+
+form h3 {
+    color: var(--primary-bg);
+    font-family: var(--navbar-links);
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 0.7rem;
+}
+
+.inputEle-container {
+    position: relative;
+    margin: 1rem 0;
+}
+
+.inputEle-container label {
+    background-color: var(--secondary-bg);
+    position: absolute;
+    top: 0;
+    left: 15px;
+    transform: translateY(-50%);
+    padding: 0 0.4rem;
+    font-family: var(--navbar-links);
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 400;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+/* .inputEle-container .msgLabel {
+    top: 0;
+    transition: translateY(0);
+} */
+
+.input {
+    width: 100%;
+    outline: none;
+    border: 2px solid var(--primary-bg);
+    background: none;
+    padding: 0.6rem 1.2rem;
+    font-weight: bold;
+    color: white;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+textarea.input {
+    padding: 0.8rem 1.2rem;
+    min-height: 150px;
+    border-radius: 22px;
+    resize: none;
+    overflow-y: auto;
+}
+
+.msgSendBtn {
+    background-color: var(--secondary-bg);
+    border: 2px solid white;
+    transition: 0.3s;
+}
+
+/* .inputEle-container span {
+    background-color: var(--secondary-bg);
+    position: absolute;
+    left: 15px;
+    top: -8px;
+    padding: 0 0.4rem;
+    font-family: var(--navbar-links);
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 400;
+    pointer-events: none;
+} */
+
+@media only screen and (max-width : 750px) {
+    .contact-formSection {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+    }
+}
+
+@media only screen and (max-width : 450px) {
+    .contact {
+        padding : 10px 20px;
+    }
+    .contact-heading {
+        font-size: 2rem;
+    }
+    .contact-subHeading{
+        font-size: 1rem;
+    }
+    .form-textArea {
+        padding: 15px 0;
+    }
+    .personalInfo {
+        row-gap: 25px;
+    }
+    .personalSection {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .personalSection-heading {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .personalContact {
+        flex-direction: column;
+        font-size: 0.8rem;
+    }
+
+    form {
+        padding: 15px 10px;
+    }
+}

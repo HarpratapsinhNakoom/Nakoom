@@ -1,0 +1,26 @@
+.title-Container {
+    padding-top: 85px;
+    /* font-family: var(--main-heading); */
+    font-family:'Open Sans', sans-serif;
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-TextContainer{
+    flex: 2;
+    font-size: 40vw;
+    font-weight: 600;
+    opacity: 60%;
+    cursor: default;
+}
+
+.title-ImgContainer{
+    flex: 1;
+}
+
+.title-Img {
+    width: 100%;
+    border-radius: 50%;
+}

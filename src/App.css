@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Bebas+Neue&family=Molengo&family=Montserrat:wght@300;400;500&family=Raleway:wght@100;300;500&display=swap');
+
+:root {
+  /* #########  COLORS  #########*/
+  --primary-text : black;
+  --secondary-text : #437fc7;
+  --primary-bg : #fff;
+  --secondary-bg : #6daffe;
+  --special : #b9732f;
+
+  /* ######### FONTS #########*/
+
+  --main-heading : 'Bebas Neue', serif;
+  --navbar-links : 'Raleway', sans-serif;
+  --section-heading : 'Montserrat', sans-serif;
+  --common-text : 'Molengo', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a {
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+ul {
+  list-style-type: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mainContent {
+  z-index: 10;
+}
+
+.btn {
+  padding: 6px;
+  font-family: var(--navbar-links);
+  margin: 10px 0;
+  width: 150px;
+  font-size: 1.2rem;
+  color: var(--primary-bg);
+  background-color: var(--primary-text);
+  border: 1px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(0,0,0,0.8);
 }

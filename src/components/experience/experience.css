@@ -1,0 +1,120 @@
+.experience {
+    margin: 10px 75px;
+}
+
+.experience-container {
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.experience-heading {
+    font-family: var(--section-heading);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.experience-choice {
+    font-family: var(--navbar-links);
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+}
+
+.educationChoice,
+.workChoice {
+    color: var(--secondary-bg);
+    margin:18px 35px;
+    cursor: pointer;
+}
+
+.educationChoice:hover,
+.workChoice:hover {
+    color: var(--secondary-text);
+}
+
+.experience-mainSection {
+    margin-top: 45px;
+}
+.experience-displaySection {
+    display:grid;
+    grid-template-columns: 3fr 0.2fr 3fr;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1.5rem;
+}
+
+.displaySection-circle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--special);
+    border-radius: 50%;
+}
+
+.displaySection-line {
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--special);
+    transform: translate(5px , -7px);
+}
+
+.displaySection-heading {
+    font-size: 1.5rem;
+    color: var(--secondary-text);
+}
+
+.displaySection-subHeading1 {
+    font-size: 1.2rem;
+    color: var(--secondary-bg);
+    margin-bottom: 10px;
+}
+
+.displaySection-subHeading2 {
+    font-size: 1.1rem;
+    font-style: italic;
+    opacity: 70%;
+}
+
+.displaySection-dates {
+    margin-top: 10px;
+}
+
+.emptyWork {
+    text-align: center;
+    font-size: 2rem;
+    font-family: var(--main-heading);
+}
+
+@media only screen and (max-width:480px) {
+    .experience {
+        margin: 10px 0;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .educationChoice,
+    .workChoice {
+        margin: 10px 0;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .displaySection-heading {
+        font-size: 1rem;
+    }
+    
+    .displaySection-subHeading1 {
+        font-size: 0.8rem;
+    }
+    
+    .displaySection-subHeading2 {
+        font-size: 0.7rem;
+    }
+}

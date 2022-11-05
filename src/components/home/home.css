@@ -1,0 +1,116 @@
+.home {
+    font-family:var(--main-heading);
+    padding-top: 85px;
+}
+
+.home-container {
+    margin: 10px 75px;
+    padding-bottom: 50px;
+    display: flex;
+    border-bottom: 3px solid var(--primary-text);
+}
+
+.home-heading {
+    flex:2;
+    font-weight: 700;
+}
+
+.home-heading-word {
+    height: 215px;
+    margin: 0 20px;
+    letter-spacing: -0.5rem;
+    display: inline-block;
+}
+
+.home-headingHover {
+    opacity:60%;
+    font-size: 215px;
+}
+
+.home-headingHover:hover{
+    color: var(--secondary-text);
+    opacity: 100%;
+}
+
+.home-aboutText{
+    width: 40%;
+    font-family: var(--section-heading);
+    margin-top: 50px;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.specialText {
+    color: var(--special);
+    text-decoration: underline;
+}
+
+.home-aboutBtns {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.resumeBtn,
+.contactBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1225px) {
+    .home-heading-word {
+        height: 180px;
+    }
+    .home-headingHover {
+        font-size: 180px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .home-heading-word {
+        height: 140px;
+    }
+    .home-headingHover {
+        font-size: 140px;
+    }
+    .home-container {
+        margin: 10px 35px;
+    }
+}
+
+/* //856 - 753 wierd */
+
+@media only screen and (max-width : 980px ) and (min-width : 748px){
+    .home-container {
+        flex-direction: column;
+    }
+
+    .home-aboutText {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width : 745px ){
+    .home-container {
+        flex-direction: column;
+    }
+
+    .home-aboutText {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 585px) {
+    .home-heading-word {
+        height: 100px;
+    }
+    .home-headingHover {
+        font-size: 100px;
+    }
+    .home-container {
+        margin: 10px;
+    }
+}
